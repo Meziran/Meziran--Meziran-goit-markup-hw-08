@@ -1,0 +1,121 @@
+
+.nav{
+    // @extend %flex-aline;
+    }
+    
+    // .nav-list{
+    //     display: inline-flex;
+    //     @include padding (0px, 0px, 0px, 93px);
+    // }
+    
+    .nav-list .link-header{
+        display: block;
+        @include padding (32px, 0px, 0px, 0px);
+    }
+    .info-list{
+        // @extend %flex-justify;
+        margin-left: auto;
+    }   
+    .icon-smartphone,
+    .icon-envelope{
+        // @extend %flex-aline-justify;
+        
+        fill: $primery-text-color;
+    }
+
+    .envelope {
+        @include size (24px, 16px);
+       
+       @include padding (0px, 10px, 0px, 0px);
+    }
+    .tel {
+        @include size (24px, 16px);
+        @include padding (0px, 10px, 0px, 0px);
+    }
+    .info-list .connection-header{
+        // display: flex;
+        display: block;
+        @include padding (32px, 0px, 0px, 0px);
+        // @include padding (32px, 0px, 32px, 0px);
+        
+    }
+    
+  
+    // .nav-list .item + .item{
+    //     margin-left: 50px;
+    // }
+    // .info-list .item+.item{
+    //     margin-left: 50px;
+    // }
+    
+    .list {
+        @include padding (0px, 0px, 0px, 0px);
+        margin: 0;
+    }
+    
+    .logo{
+        // display: flex;
+        
+        @include padding (25px, 0px, 24px, 0px);
+    
+        font-family: Raleway;
+        @include fonts(700, 26px, 1.19em);
+    }
+    
+    .logo-web{
+        color: $accent-color;
+    }
+    
+    .logo-studio{
+        color: $title-text-color;
+    }
+    
+    .link-header{
+        color: $title-text-color;
+        @include fonts(500, 14px, 1.14em);
+        
+        @include padding (32px, 0px, 0px, 0px);
+        letter-spacing: 0.02em;
+        
+    &:hover, 
+    &:focus{
+        @extend %hover--accent-color
+    }
+        
+    &.current{
+        color: $accent-color;
+    } 
+    }
+    .link-header:hover::after,
+    .current::after{
+        content: "";
+        display: block;
+        @include size (100%, 4px);
+
+        border-radius: 4px;
+        background-color: $accent-color;
+        
+        margin-top: 28px;
+        
+        @extend %animation;     
+    }
+    
+    .connection-header{
+    // @extend %flex-aline-justify;
+        color: $primery-text-color;
+        @include fonts(500, 14px, 1.14em);
+        
+        letter-spacing: 0.02em;
+    
+    &:hover, 
+    &:focus{
+        @extend %hover--accent-color;
+    }
+    }
+    .icon-envelope:hover .envelope,
+    .icon-smartphone:target .envelope,
+    .icon-smartphone:hover .tel,
+    .icon-smartphone:target .tel
+    {
+        @extend %hover--fill-accent;
+    }

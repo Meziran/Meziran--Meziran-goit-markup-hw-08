@@ -1,0 +1,36 @@
+.filter-nav{
+    // @extend %flex-justify;
+
+    @include padding (94px, 0px, 50px, 0px);
+}
+
+.button-filter{
+
+  border-radius: 4px;
+  border: 1px transparent;
+  background-color: $not-white;
+  
+}
+.btn-text{ 
+  @include padding (6px, 22px, 6px, 22px);
+  
+  border-radius: 4px;
+  border: 1px solid transparent;   
+  
+  text-align: center; 
+  font-family: Roboto;
+  @include fonts(500, 16px, 1.61em);
+}
+// .filter-nav .button-filter+.button-filter{
+//     margin-left: 8px;
+// }
+
+.button-filter:hover,
+.button-filter:focus,
+.btn-text:hover,
+.btn-text:focus
+{
+  background-color: $accent-color;
+  @extend %hover--accent-color;
+  color: $white;
+} 

@@ -1,0 +1,23 @@
+.icons-item-client:not(:last-child){
+    margin-right: 30px;
+}
+
+.icons-link-clients{
+    @extend %flex-aline-justify;
+
+    @include size (170px, 90px);
+
+    border: 1px solid $fill-icons;
+    border-radius: 4px;
+    fill: $fill-icons;
+
+    &:hover,
+    &:focus  {
+    border: 1px solid $accent-color;
+    @extend %hover--fill-accent;
+}
+}
+.icons-link-clients:hover .client-icons-svg,
+.icons-link-clients:target .client-icons-svg{
+     @extend %hover--fill-accent;
+}

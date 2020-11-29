@@ -1,0 +1,185 @@
+.nav-footer{
+    background-color: $title-text-color;    
+}
+// .flexbox{
+//     display: flex;
+//     justify-content: flex-start;
+// }
+.footer{
+   @include padding (60px, 0px, 60px, 0px);
+}
+.logo-footer{
+    @include padding (0px, 0px, 20px, 0px);
+    
+    font-family: Raleway;
+    @include fonts(700, 26px, 1.19em);
+}
+
+.footer-studio{
+    color: $white;
+}
+address ul{
+    @include padding (20px, 0px, 0px, 0px);
+    
+ }
+.address{
+    font-style: normal;
+   
+    line-height: 1.71;
+
+    color: $white;
+    
+    &:hover, 
+    &:focus{
+    @extend %hover--accent-color;
+  }
+}
+.link-address{
+    @include padding (0px, 0px, 9px, 0px);
+    
+}
+
+.connection-footer{
+    font-style: normal;
+    line-height: 1.71;
+
+    color: rgba(255, 255, 255, 0.6); 
+
+    &:hover, 
+    &:focus{
+    @extend %hover--accent-color;
+  }
+}
+
+  .join{
+    @include padding (72px, 0px, 100px, 70px);
+    
+  }
+  .join-title{
+    @include padding (0px, 0px, 20px, 0px);
+    
+    color: $white;
+
+    font-family: Roboto;
+    @include fonts(700, 14px, 1.14em);
+    
+    text-transform: uppercase;
+  }
+  .ul-join .join-link+.join-link{
+      margin-left: 10px;
+  }
+
+  .join-link::before{
+      display: inline-block ;
+      justify-content: space-between;
+      content: "";
+      
+      @include size (44px, 44px);
+           
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      
+
+    }
+    .icon-instagram::before{
+        background-size: 20px;
+        background-image: url(../img/icon/footer/footer-instagram.svg);
+    }
+    .icon-twitter::before{
+        background-size: 20px;
+        background-image: url(../img/icon/footer/footer-twitter.svg);
+    }
+    .icon-facebook::before{
+        background-size: 20px;
+        background-image: url(../img/icon/footer/footer-facebook.svg);
+    }
+    .icon-linkedin::before{
+        background-size: 20px;
+        background-image: url(../img/icon/footer/footer-linkedin.svg);
+    }
+     
+    .join-link:hover,
+    .join-link:focus{
+        @include size (44px, 44px);
+
+        background-color: $accent-color;
+        border-radius: 50%;
+
+        @extend %animation;
+    }
+    
+    .form-footer{ 
+        @include padding (72px, 0px, 0px, 0px);
+
+        margin-left: 93px;
+     }
+
+    .btn-footer{
+        position: relative;
+        margin-left: 12px;
+        @include padding (10px, 62px, 10px, 29px);
+        
+        min-width: 200px;
+        border: 1px transparent;
+        
+        border-radius: 4px;
+        background-color: $accent-color;
+
+        font-family: Roboto;
+        @include fonts(700, 16px, 1.87em);
+        
+        letter-spacing: 0.06em;
+        
+    
+        color: $white;
+    }
+    .modal-form-footer{
+        @include size (358px, 50px);
+
+        @include padding (16px, 16px, 16px, 16px);
+        
+        @include fonts(400, 16px, 1.25em);
+        
+        border-radius: 4px;
+    }
+    .form-fild-footer{
+    // display: flex;
+
+    position: relative;
+    }
+    .footer-modal-icon{
+        position: absolute;
+        top: 25%;
+        
+        right: 16px;
+        display: inline-block;
+    }
+    .footer-icon-svg{  
+        @include size (24px, 24px);  
+        fill: $white;
+    }
+        
+
+    .buton-hero:hover,
+    .btn-modal:hover, 
+
+    .btn-footer:hover,
+    .btn-footer:hover ~ .footer-icon-svg{
+        background-color: $white;
+        @extend %hover--fill-accent;
+        color: $accent-color;
+    } 
+
+    .buton-hero:focus,
+    .btn-footer:focus{
+        color: $accent-color;
+        background-color: $white;
+        @extend %hover--fill-accent;
+    }
+    .btn-footer:focus ~ .footer-icon-svg{
+        @extend %hover--fill-accent;
+        background-color: $white;
+    }

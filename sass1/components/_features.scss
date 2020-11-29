@@ -1,0 +1,60 @@
+// .ul-features,
+// .doing,
+// .blok-team,
+// .client,
+// .ul-join
+// {
+//     @extend %flex-justify;
+// }
+.cont-features{
+margin-top: 94px;    
+}
+
+
+.features{
+    // display: inline-block;
+    @include size (270px,);
+}
+
+.features::before{
+    display: block;
+    content: "";
+    height: 120px;
+    
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $not-white ;
+    border-radius: 4px;
+}
+.icon-group::before{
+   background-size: 70px;
+   background-image: url(../img/icon/features/Group.svg);
+}
+.icon-clock::before{
+    background-size: 70px;
+    background-image: url(../img/icon/features/clock.svg);
+ }
+
+ .icon-diagram::before{
+    background-size: 70px;
+    background-image: url(../img/icon/features/diagram.svg);
+ }
+
+ .icon-asronaut::before{
+    background-size: 70px;
+    background-image: url(../img/icon/features/astronaut.svg);
+ }
+.ul-features .features:not(:last-child),
+.doing .doing-img:not(:last-child),
+.blok-team .card-team:not(:last-child),
+.client .card-client:not(:last-child)
+{
+    margin-right: 30px;
+}
+
+.title-features{
+    @include padding (30px, 0px, 10px, 0px);
+    
+    text-transform: uppercase;
+ }

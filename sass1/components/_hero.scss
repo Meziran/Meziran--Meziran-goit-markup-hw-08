@@ -1,0 +1,59 @@
+.hero{
+    max-width: 1600px;
+    height: 600px;
+    @extend %margin-auto;
+    
+    background-image: linear-gradient(
+    
+        rgba(47, 0, 0, 0.4),
+        rgba(0, 48, 0, 0.4),
+        rgba(0, 0, 58, 0.4)
+        ),
+        url("../img/hero.jpg");
+    background-color: $title-text-color;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+} 
+.buton-hero{
+    display: block;
+    
+    border: 1px solid transparent;
+    margin-top: 40px;
+    @include padding (10px, 32px, 10px, 32px);
+        
+    min-width: 200px;
+    border: 1px transparent;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    background-color: $accent-color;
+    
+    @include fonts(700, 16px, 1.87em);
+
+    letter-spacing: 0.06em;
+    font-family: Roboto;
+
+    color: $white;
+}
+.hero-text{
+    // display: inline-flex;
+    align-content: center;
+
+    @include padding (200px, 0px, 0px, 0px);
+    
+    @include size (696px, );
+
+    color: $white;
+    font-family: Roboto;
+    @include fonts(900, 44px, 1.5em);
+ 
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+// .btn-blok{
+//     @extend %flex-justify;
+// }
