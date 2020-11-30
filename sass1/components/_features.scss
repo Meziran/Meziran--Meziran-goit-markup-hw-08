@@ -45,13 +45,13 @@ margin-top: 94px;
     background-size: 70px;
     background-image: url(../img/icon/features/astronaut.svg);
  }
-.ul-features .features:not(:last-child),
-.doing .doing-img:not(:last-child),
-.blok-team .card-team:not(:last-child),
-.client .card-client:not(:last-child)
-{
-    margin-right: 30px;
-}
+// .ul-features .features:not(:last-child),
+// .doing .doing-img:not(:last-child),
+// .blok-team .card-team:not(:last-child),
+// .client .card-client:not(:last-child)
+// {
+//     margin-right: 30px;
+// }
 
 .title-features{
     @include padding (30px, 0px, 10px, 0px);

@@ -1,11 +1,31 @@
-.icons-item-client:not(:last-child){
-    margin-right: 30px;
+.client-icons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 1px solid blue;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+// .icons-item-client:not(:last-child){
+//     margin-right: 30px;
+// }
+// .icons-item-client:nth-last-child(-n + 3){
+//     margin-bottom: 0;
+
+// }
+.icons-link-client{
+    margin-bottom: 30px;
 }
 
 .icons-link-clients{
     @extend %flex-aline-justify;
+     // display: flex;
+    // flex-wrap: wrap;
+    
+    @include size (210px, 90px);
 
-    @include size (170px, 90px);
+    
 
     border: 1px solid $fill-icons;
     border-radius: 4px;
@@ -16,8 +36,19 @@
     border: 1px solid $accent-color;
     @extend %hover--fill-accent;
 }
+@media screen and (min-width: 768px) { 
+    @include size (226px, 90px);
+}
 }
 .icons-link-clients:hover .client-icons-svg,
 .icons-link-clients:target .client-icons-svg{
-     @extend %hover--fill-accent;
+    .icons-link-clients {@extend %hover--fill-accent;
+    }
 }
+.client-icons{
+    @extend %flex-justify;
+}
+// .work-kard:nth-child(3n){
+//     margin-right: 0;
+// }
+
