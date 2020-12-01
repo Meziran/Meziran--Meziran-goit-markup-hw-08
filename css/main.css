@@ -267,13 +267,53 @@ html {
 
 .hero {
   width: 480px;
-  height: 400px;
   background-image: linear-gradient(rgba(47, 0, 0, 0.4), rgba(0, 48, 0, 0.4), rgba(0, 0, 58, 0.4)), url("../img/hero.jpg");
   background-color: #212121;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    width: 1200px;
+    height: 600px;
+  }
+}
+
+.hero-text {
+  display: inline-flex;
+  align-content: center;
+  padding-top: 200px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  width: 480px;
+  color: #FFFFFF;
+  font-family: Roboto;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.61em;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-text {
+    width: 696px;
+    height: auto;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.5em;
+  }
 }
 
 .buton-hero {
@@ -297,18 +337,8 @@ html {
   color: #FFFFFF;
 }
 
-.hero-text {
-  display: inline-flex;
-  align-content: center;
-  width: 360px;
-  color: #FFFFFF;
-  font-family: Roboto;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.5em;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+.btn-blok {
+  margin-bottom: 120px;
 }
 
 .cont-features {
@@ -464,13 +494,37 @@ html {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  border: 1px solid blue;
   margin-left: 15px;
   margin-right: 15px;
 }
 
-.icons-link-client {
-  margin-bottom: 30px;
+@media screen and (min-width: 1200px) {
+  .client-icons {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+.card-clients {
+  margin-bottom: 28px;
+}
+
+@media screen and (min-width: 1200px) {
+  .card-clients {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card-clients:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .card-clients:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
 }
 
 .icons-link-clients {
@@ -488,6 +542,13 @@ html {
 @media screen and (min-width: 768px) {
   .icons-link-clients {
     width: 226px;
+    height: 90px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .icons-link-clients {
+    width: 170px;
     height: 90px;
   }
 }
