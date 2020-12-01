@@ -2,19 +2,56 @@
 // .doing,
 // .blok-team,
 // .client,
-// .ul-join
-// {
-//     @extend %flex-justify;
-// }
+.ul-join
+{
+    @extend %flex-justify;
+}
 .cont-features{
 margin-top: 94px;    
 }
 
 
 .features{
-    // display: inline-block;
+   // display: flex;
+   
+    display: inline-block;
     @include size (270px,);
+   width: 450px;
+   height: 220px;
+   // border: 1px solid blue;
+   margin-bottom: 30px;
 }
+.features:last-child{
+   margin-bottom: 60px;
+}
+
+@media screen and (min-width:768px){
+  .features {  
+   flex-wrap: wrap;
+   width: 354px;
+   margin-right: 24px;
+}.features:nth-child(2n){
+   margin-right: 0;
+}
+}
+
+// .features:nth-last-child(-n + 2){
+//    margin-bottom: 60;
+// }
+
+@media screen and (min-width:1200px){
+   .features{ width: 270px;
+   height: 250px;
+;
+margin-right: 26px;}
+.features:nth-child(3n){
+   margin-left: 25px;
+ }
+ .features:last-child{
+    margin-right: 0;
+ }
+}
+
 
 .features::before{
     display: block;

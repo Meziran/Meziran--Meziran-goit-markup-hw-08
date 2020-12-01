@@ -1,10 +1,11 @@
 .nav-footer{
     background-color: $title-text-color;    
 }
-// .flexbox{
-//     display: flex;
+.flexbox{
+    display: flex;
 //     justify-content: flex-start;
-// }
+flex-wrap: wrap;
+}
 .footer{
    @include padding (60px, 0px, 60px, 0px);
 }

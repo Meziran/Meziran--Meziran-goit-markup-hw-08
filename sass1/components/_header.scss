@@ -1,7 +1,7 @@
 
-.nav{
+// .nav{
     // @extend %flex-aline;
-    }
+    // }
     
     // .nav-list{
     //     display: inline-flex;
@@ -18,7 +18,7 @@
     }   
     .icon-smartphone,
     .icon-envelope{
-        // @extend %flex-aline-justify;
+        @extend %flex-aline-justify;
         
         fill: $primery-text-color;
     }
@@ -33,7 +33,7 @@
         @include padding (0px, 10px, 0px, 0px);
     }
     .info-list .connection-header{
-        // display: flex;
+        display: flex;
         display: block;
         @include padding (32px, 0px, 0px, 0px);
         // @include padding (32px, 0px, 32px, 0px);
