@@ -49,13 +49,14 @@ textarea {
   margin: 0;
 }
 
-.btn-blok, .ul-join, .social-icons, .client-icons {
+.btn-blok, .doing,
+.ul-join, .social-icons, .client-icons {
   display: flex;
   justify-content: center;
 }
 
 .icon-smartphone,
-.icon-envelope, .icons-link, .icons-link-clients, .close-modal {
+.icon-envelope, .title-doing, .icons-link, .icons-link-clients, .close-modal {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -375,6 +376,7 @@ html {
   .features {
     width: 270px;
     height: 250px;
+    margin-bottom: 0pc;
     margin-right: 26px;
   }
   .features:nth-child(3n) {
@@ -382,6 +384,7 @@ html {
   }
   .features:last-child {
     margin-right: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -416,12 +419,22 @@ html {
   background-image: url(../img/icon/features/astronaut.svg);
 }
 
+.doing-img:not(:last-child) {
+  margin-right: 30px;
+}
+
 .title-features {
   padding-top: 30px;
   padding-right: 0px;
   padding-bottom: 10px;
   padding-left: 0px;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 1200px) {
+  .cont-doing {
+    display: none;
+  }
 }
 
 .title-h2 {
@@ -446,6 +459,7 @@ html {
 }
 
 .title-doing {
+  position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;

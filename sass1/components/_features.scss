@@ -1,5 +1,5 @@
 // .ul-features,
-// .doing,
+.doing,
 // .blok-team,
 // .client,
 .ul-join
@@ -42,6 +42,7 @@ margin-top: 94px;
 @media screen and (min-width:1200px){
    .features{ width: 270px;
    height: 250px;
+   margin-bottom: 0pc;
 ;
 margin-right: 26px;}
 .features:nth-child(3n){
@@ -49,6 +50,7 @@ margin-right: 26px;}
  }
  .features:last-child{
     margin-right: 0;
+    margin-bottom: 0;
  }
 }
 
@@ -83,12 +85,13 @@ margin-right: 26px;}
     background-image: url(../img/icon/features/astronaut.svg);
  }
 // .ul-features .features:not(:last-child),
-// .doing .doing-img:not(:last-child),
+
 // .blok-team .card-team:not(:last-child),
-// .client .card-client:not(:last-child)
-// {
-//     margin-right: 30px;
-// }
+// .client .card-client:not(:last-child).doing, 
+.doing-img:not(:last-child)
+{
+    margin-right: 30px;
+}
 
 .title-features{
     @include padding (30px, 0px, 10px, 0px);

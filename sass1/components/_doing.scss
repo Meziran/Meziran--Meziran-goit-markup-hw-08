@@ -1,3 +1,9 @@
+.cont-doing{
+    @media screen and (max-width: 1200px) {
+     display: none;
+    }
+}
+
 .title-h2{
     margin-bottom: 50px;
    
@@ -18,8 +24,8 @@
 
 }
 .title-doing{
-    // position: absolute;
-    // @extend %flex-aline-justify;
+    position: absolute;
+    @extend %flex-aline-justify;
     bottom: 0;
     left: 0;
    
