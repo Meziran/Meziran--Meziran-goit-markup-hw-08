@@ -438,20 +438,59 @@ html {
 }
 
 .title-h2 {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   text-align: center;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.19em;
+}
+
+@media screen and (min-width: 768px) {
+  .title-h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.19em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .title-h2 {
+    margin-bottom: 50px;
+  }
 }
 
 .cont-client,
 .cont-doing,
-.title-client {
-  padding-top: 94px;
+.title-client,
+.team-cont {
+  padding-top: 30px;
   padding-right: 0px;
-  padding-bottom: 94px;
+  padding-bottom: 60px;
   padding-left: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .cont-client,
+  .cont-doing,
+  .title-client,
+  .team-cont {
+    padding-top: 60px;
+    padding-right: 0px;
+    padding-bottom: 60px;
+    padding-left: 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .cont-client,
+  .cont-doing,
+  .title-client,
+  .team-cont {
+    padding-top: 94px;
+    padding-right: 0px;
+    padding-bottom: 94px;
+    padding-left: 0px;
+  }
 }
 
 .position-doing {
@@ -476,16 +515,7 @@ html {
 }
 
 .team {
-  padding-top: 60px;
-  padding-right: 0px;
-  padding-bottom: 60px;
-  padding-left: 0px;
   background-color: #F5F4FA;
-}
-
-.team-h2 {
-  padding-bottom: 30px;
-  text-align: center;
 }
 
 .card-team {

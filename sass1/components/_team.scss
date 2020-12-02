@@ -1,7 +1,7 @@
 .team{
     
     // display: inline-block;
-    @include padding (60px, 0px, 60px, 0px);
+    // @include padding (60px, 0px, 60px, 0px);
     
     background-color: $not-white;
 }
@@ -10,10 +10,10 @@
 //     display: inline-flex;;
 // }
 
-.team-h2{
-    padding-bottom: 30px;
-    text-align: center;
-}
+// .team-h2{
+//     padding-bottom: 30px;
+//     text-align: center;
+// }
 .card-team{
     
     text-align: center;
