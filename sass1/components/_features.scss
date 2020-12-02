@@ -7,9 +7,12 @@
     @extend %flex-justify;
 }
 .cont-features{
-margin-top: 94px;    
+margin-top: 60px;    
 }
-
+@media screen and (min-width:1200px){
+   .cont-features { margin-top: 94px; 
+}
+}
 
 .features{
    // display: flex;
