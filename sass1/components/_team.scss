@@ -27,7 +27,7 @@
 
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    // border: 1px solid blue;
+    
 
     &:last-child{
         margin-bottom: 0;
@@ -101,21 +101,7 @@
 
     @include fonts(500, 16px, 1.19em);
 }
-  
-// .icons-item{
-    
 
-// }
-
-// .icons-item:not(:last-child){
-//     margin-right: 10px;
-//     // @include padding (0px, 0px, 30px, 0px);
-// }
-// @media screen and (min-width:768px){
-//     .card-team {
-//         padding-bottom: 24px;
-//     }
-// }
 
 .social-icons-svg{
     @include size (20px, 20px);
@@ -129,6 +115,7 @@
 
 .team-text{
     @include fonts(500, 16px, 1.36em);
+    
     @include padding (0px, 0px, 16px, 0px);
  }
 

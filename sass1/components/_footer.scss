@@ -2,23 +2,15 @@
     background-color: $title-text-color;    
 }
 .flexbox{
-//     display: flex;
-// //     justify-content: flex-start;
-// flex-wrap: wrap;
-
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     list-style: none;
     margin-top: 0;
     text-align: center; 
-    // margin-left: auto;
-    // margin-left: auto;
-
 }
 .footer{
    @include padding (60px, 20px, 60px, 20px);
-//    border: 1px solid blue;
 }
 @media screen and (min-width:768px){
     .footer {
@@ -76,7 +68,6 @@ address ul{
 
   .join{
     @include padding (0px, 20px, 60px, 20px);
-    // border: 1px solid red;
 }
 @media screen and (min-width:768px){
     .join {
@@ -98,6 +89,11 @@ address ul{
     
     text-transform: uppercase;
   }
+  @media screen and (min-width:1200px){
+    .join-title {
+        display: flex;
+    }
+}
   .ul-join .join-link+.join-link{
       margin-left: 10px;
   }
@@ -114,9 +110,7 @@ address ul{
       background-position: center;
       background-color: rgba(255, 255, 255, 0.1);
       border-radius: 50%;
-      
-
-    }
+     }
     .icon-instagram::before{
         background-size: 20px;
         background-image: url(../img/icon/footer/footer-instagram.svg);
@@ -143,11 +137,24 @@ address ul{
 
         @extend %animation;
     }
-    
-    .form-footer{ 
-        @include padding (0px, 0px, 60px, 0px);
-        // border: 1px solid tomato;
+    .form-title{
         
+        @include padding (0px, 0px, 19px, 0px);
+        
+        color: $white;
+    
+        font-family: Roboto;
+        @include fonts(700, 14px, 1.14em);
+        
+        text-transform: uppercase;
+      }
+      @media screen and (min-width:1200px){
+        .form-title {
+            display: flex;
+        }
+    }
+    .form-footer{ 
+        @include padding (0px, 0px, 60px, 0px);  
      }
      
      @media screen and (min-width:1200px){
@@ -198,6 +205,7 @@ address ul{
     display: flex;
 
     position: relative;
+    padding-top: 1px;
     }
     .footer-modal-icon{
         position: absolute;
