@@ -939,7 +939,6 @@ address ul {
 .btn-footer {
   position: relative;
   margin-left: 12px;
-  margin-top: 20px;
   padding-top: 10px;
   padding-right: 62px;
   padding-bottom: 10px;
@@ -965,6 +964,9 @@ address ul {
 .modal-form-footer {
   width: 450px;
   height: 50px;
+  margin-right: 50px;
+  margin-left: 50px;
+  margin-bottom: 20px;
   padding-top: 16px;
   padding-right: 16px;
   padding-bottom: 16px;
@@ -977,6 +979,7 @@ address ul {
 
 @media screen and (min-width: 1200px) {
   .modal-form-footer {
+    margin: 0;
     width: 358px;
     height: 50px;
   }

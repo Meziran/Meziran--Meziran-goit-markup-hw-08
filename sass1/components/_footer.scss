@@ -166,7 +166,7 @@ address ul{
     .btn-footer{
         position: relative;
         margin-left: 12px;
-        margin-top: 20px;
+        // margin-top: 20px;
         @include padding (10px, 62px, 10px, 29px);
         
         min-width: 200px;
@@ -189,6 +189,9 @@ address ul{
     }
     .modal-form-footer{
         @include size (450px, 50px);
+        margin-right: 50px;
+        margin-left: 50px;
+        margin-bottom: 20px;
 
         @include padding (16px, 16px, 16px, 16px);
         
@@ -198,6 +201,7 @@ address ul{
     }
     @media screen and (min-width:1200px){
         .modal-form-footer {
+            margin: 0;
             @include size (358px, 50px);
         }
     }
@@ -207,6 +211,7 @@ address ul{
     position: relative;
     padding-top: 1px;
     }
+
     .footer-modal-icon{
         position: absolute;
         top: 25%;
