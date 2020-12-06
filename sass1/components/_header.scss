@@ -8,12 +8,16 @@
 }
 .nav-menu{
     margin-bottom: 40px;
+    @media screen and (min-width: 768px){ 
+margin-bottom: 0;
+    }
 }   
 .nav-list{
-    display: inline-block;
+    display: inline-flex;
     flex-direction: column;
     @media screen and (min-width: 768px){ 
         display: inline-flex;
+        flex-direction: row;
         @include padding (0px, 0px, 0px, 88px);
     }
 
