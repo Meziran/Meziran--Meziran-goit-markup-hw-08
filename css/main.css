@@ -182,14 +182,15 @@ html {
 }
 
 .nav-list {
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
 }
 
 @media screen and (min-width: 768px) {
   .nav-list {
-    display: inline-flex;
-    flex-direction: unset;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     padding-top: 0px;
     padding-right: 0px;
     padding-bottom: 0px;
