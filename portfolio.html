@@ -15,15 +15,15 @@
 
 <body>
     <header class="page-header">
-        <nav class="container nav ">
+        <nav class="container nav">
             <a class="logo" href="./index.html"><span class="logo-web">Web</span><span
                     class="logo-studio">Studio</span></a>
             <div class="menu-container" data-menu id="menu-container">
-                <nav>
+                <nav class="nav-menu">
                     <ul class="nav-list">
-                        <li class="item"><a class="link-header current" href="./index.html">Студия</a>
+                        <li class="item"><a class="link-header " href="./index.html">Студия</a>
                         </li>
-                        <li class="item"><a class="link-header" href="./portfolio.html">Портфолио</a>
+                        <li class="item"><a class="link-header current" href="./portfolio.html">Портфолио</a>
                         </li>
                         <li class="item"><a class="link-header" href="#">Контакты</a>
                         </li>
@@ -234,6 +234,39 @@
             </section>
         </div>
     </footer>
+    <script>
+        // MODAL
+        (() => {
+            const refs = {
+                openModalBtn: document.querySelector('[data-open-modal]'),
+                closeModalBtn: document.querySelector('[data-close-modal]'),
+                modal: document.querySelector('[data-modal]'),
+            };
+
+            refs.openModalBtn.addEventListener('click', toggleModal);
+            refs.closeModalBtn.addEventListener('click', toggleModal);
+
+            function toggleModal() {
+                refs.modal.classList.toggle('is-hidden');
+            }
+        })();
+
+        // BURGER
+        (() => {
+            const menuBtnRef = document.querySelector("[data-menu-button]");
+            const mobileMenuRef = document.querySelector("[data-menu]");
+
+            menuBtnRef.addEventListener("click", () => {
+                const expanded =
+                    menuBtnRef.getAttribute("aria-expanded") === "true" || false;
+
+                menuBtnRef.classList.toggle("is-open");
+                menuBtnRef.setAttribute("aria-expanded", !expanded);
+
+                mobileMenuRef.classList.toggle("is-open");
+            });
+        })();
+    </script>
 </body>
 
 </html>

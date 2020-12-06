@@ -6,8 +6,12 @@
     position: relative;
     @extend %flex-aline;
 }
-    
+.nav-menu{
+    margin-bottom: 40px;
+}   
 .nav-list{
+    display: inline-block;
+    flex-direction: column;
     @media screen and (min-width: 768px){ 
         display: inline-flex;
         @include padding (0px, 0px, 0px, 88px);
@@ -28,9 +32,11 @@
     margin-left: auto;
 
      @media screen and (min-width: 768px) and (max-width: 1199px){ 
-    margin-top: 21px;
-    padding-bottom: 15px;
-    justify-content: center;
+        padding: 12px 0;
+        text-align: start;
+        // margin-top: 21px;
+    // padding-bottom: 15px;
+    // justify-content: center;
     }
 
     @media screen and (min-width: 1200px){ 
@@ -43,18 +49,19 @@
         @extend %flex-aline-justify;
         
         fill: $primery-text-color;
+        margin-right: 10px;
     }
 
     .envelope {
         @include size (24px, 16px);
-        margin-left: 5px;
+    //     margin-left: 5px;
        
-       @include padding (0px, 10px, 0px, px);
+    //    @include padding (0px, 10px, 0px, px);
     }
     .tel {
         // display: flex;
         @include size (24px, 16px);
-        @include padding (0px, 10px, 0px, 0px);
+        // @include padding (0px, 10px, 0px, 0px);
         // margin-top: 10px;
     }
     .info-list .connection-header{
@@ -125,19 +132,20 @@
         border-radius: 4px;
         background-color: $accent-color;
         
-        margin-top: 28px;
+        margin-top: 31px;
         
         @extend %animation;     
     }
     
     .connection-header{
-    @extend %flex-aline-justify;
+        @extend %flex-aline;
+    // @extend %flex-aline-justify;
         color: $primery-text-color;
         @include fonts(500, 18px, 1.16em);
         
         letter-spacing: 0.02em;
         
-        padding: 10px, 0, 5px, 0;
+        padding: 5px;
             
         @media screen and (min-width: 768px){ 
             @include fonts(500, 12px, 1.16em);

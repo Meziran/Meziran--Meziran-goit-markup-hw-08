@@ -49,7 +49,7 @@ textarea {
   margin: 0;
 }
 
-.nav {
+.nav, .connection-header {
   display: flex;
   align-items: center;
 }
@@ -61,7 +61,7 @@ textarea {
 }
 
 .icon-smartphone,
-.icon-envelope, .connection-header, .title-doing, .icons-link, .icons-link-clients, .close-modal {
+.icon-envelope, .title-doing, .icons-link, .icons-link-clients, .close-modal {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -171,6 +171,15 @@ html {
   position: relative;
 }
 
+.nav-menu {
+  margin-bottom: 40px;
+}
+
+.nav-list {
+  display: inline-block;
+  flex-direction: column;
+}
+
 @media screen and (min-width: 768px) {
   .nav-list {
     display: inline-flex;
@@ -204,9 +213,8 @@ html {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .info-list {
-    margin-top: 21px;
-    padding-bottom: 15px;
-    justify-content: center;
+    padding: 12px 0;
+    text-align: start;
   }
 }
 
@@ -219,25 +227,17 @@ html {
 .icon-smartphone,
 .icon-envelope {
   fill: #757575;
+  margin-right: 10px;
 }
 
 .envelope {
   width: 24px;
   height: 16px;
-  margin-left: 5px;
-  padding-top: 0px;
-  padding-right: 10px;
-  padding-bottom: 0px;
-  padding-left: px;
 }
 
 .tel {
   width: 24px;
   height: 16px;
-  padding-top: 0px;
-  padding-right: 10px;
-  padding-bottom: 0px;
-  padding-left: 0px;
 }
 
 .info-list .connection-header {
@@ -316,7 +316,7 @@ html {
   height: 4px;
   border-radius: 4px;
   background-color: #2196F3;
-  margin-top: 28px;
+  margin-top: 31px;
 }
 
 .connection-header {
@@ -325,7 +325,7 @@ html {
   font-size: 18px;
   line-height: 1.16em;
   letter-spacing: 0.02em;
-  padding: 10px, 0, 5px, 0;
+  padding: 5px;
 }
 
 @media screen and (min-width: 768px) {
@@ -373,7 +373,7 @@ html {
 
 .menu-container {
   display: none;
-  background-color: turquoise;
+  background-color: #FFFFFF;
   text-align: center;
   font-size: 20px;
 }
