@@ -54,14 +54,14 @@ textarea {
   align-items: center;
 }
 
-.info-list, .btn-blok, .doing,
+.btn-blok, .doing,
 .ul-join, .social-icons, .client-icons {
   display: flex;
   justify-content: center;
 }
 
 .icon-smartphone,
-.icon-envelope, .title-doing, .icons-link, .icons-link-clients, .close-modal {
+.icon-envelope, .connection-header, .title-doing, .icons-link, .icons-link-clients, .close-modal {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -167,12 +167,18 @@ html {
   line-height: 1.71;
 }
 
-.nav-list {
-  display: inline-flex;
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  padding-left: 93px;
+.nav {
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-list {
+    display: inline-flex;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 93px;
+  }
 }
 
 .nav-list .link-header {
@@ -183,8 +189,11 @@ html {
   padding-left: 0px;
 }
 
-.info-list {
-  margin-left: auto;
+@media screen and (min-width: 768px) {
+  .info-list {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .icon-smartphone,
@@ -215,20 +224,20 @@ html {
   display: block;
   padding-top: 32px;
   padding-right: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-top: 32px;
-  padding-right: 0px;
   padding-bottom: 32px;
   padding-left: 0px;
 }
 
-.nav-list .item + .item {
-  margin-left: 50px;
+@media screen and (min-width: 768px) {
+  .nav-list .item + .item {
+    margin-left: 50px;
+  }
 }
 
-.info-list .item + .item {
-  margin-left: 50px;
+@media screen and (min-width: 1200px) {
+  .info-list .item + .item {
+    margin-left: 50px;
+  }
 }
 
 .list {
@@ -291,18 +300,68 @@ html {
   font-size: 14px;
   line-height: 1.14em;
   letter-spacing: 0.02em;
+  padding-bottom: 15px;
 }
 
 .menu-button {
-  display: inline-flex;
-  margin: 0;
-  padding: 0;
-  border: none;
+  display: inline-block;
+  margin-left: auto;
+  width: 40px;
+  height: 40px;
   background-color: transparent;
+  border: none;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+}
+
+.menu-button .menu-burger {
+  display: none;
+}
+
+.menu-button.is-open .menu-burger {
+  display: block;
+}
+
+.menu-button.is-open .burger-close {
+  display: none;
+}
+
+.menu-container {
+  display: none;
+  background-color: turquoise;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.menu-container.is-open {
+  display: block;
+}
+
+@media screen and (max-width: 767px) {
+  .menu-container {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: inline-block;
+    width: 100%;
+  }
 }
 
 .hero {
   width: 480px;
+  height: 400px;
   background-image: linear-gradient(rgba(47, 0, 0, 0.4), rgba(0, 48, 0, 0.4), rgba(0, 0, 58, 0.4)), url("../img/hero.jpg");
   background-color: #212121;
   background-repeat: no-repeat;

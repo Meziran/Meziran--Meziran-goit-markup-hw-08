@@ -1,21 +1,37 @@
 
+
+
+
 .nav{
+    position: relative;
     @extend %flex-aline;
-    }
+}
     
-    .nav-list{
-        display: inline-flex;
-        @include padding (0px, 0px, 0px, 93px);
-    }
+.nav-list{
+    @media screen and (min-width: 768px){ 
+    display: inline-flex;
+    @include padding (0px, 0px, 0px, 93px);
+}
+      
+}
     
-    .nav-list .link-header{
-        display: block;
-        @include padding (32px, 0px, 0px, 0px);
+.nav-list .link-header{
+    display: block;
+    @include padding (32px, 0px, 0px, 0px);
+}
+.info-list{
+    
+    // margin-left: auto;
+    // border: 1px solid black;
+    // padding-top: 60px;
+    // padding-bottom: 40px;
+     @media screen and (min-width: 768px) { 
+    //   @extend %flex-justify; 
+    display: flex;
+    justify-content: center;
     }
-    .info-list{
-        @extend %flex-justify;
-        margin-left: auto;
-    }   
+}  
+
     .icon-smartphone,
     .icon-envelope{
         @extend %flex-aline-justify;
@@ -35,18 +51,22 @@
     .info-list .connection-header{
         display: flex;
         display: block;
-        @include padding (32px, 0px, 0px, 0px);
+       
         @include padding (32px, 0px, 32px, 0px);
-        
+     
     }
     
   
     .nav-list .item + .item{
+        @media screen and (min-width: 768px){ 
         margin-left: 50px;
+    }
     }
     .info-list .item+.item{
+        @media screen and (min-width: 1200px){ 
         margin-left: 50px;
     }
+        }
     
     .list {
         @include padding (0px, 0px, 0px, 0px);
@@ -101,17 +121,19 @@
     }
     
     .connection-header{
-    // @extend %flex-aline-justify;
+    @extend %flex-aline-justify;
         color: $primery-text-color;
         @include fonts(500, 14px, 1.14em);
-        
+        // border: 1px solid red;
         letter-spacing: 0.02em;
+        padding-bottom: 15px;
     
     &:hover, 
     &:focus{
         @extend %hover--accent-color;
     }
     }
+
     .icon-envelope:hover .envelope,
     .icon-smartphone:target .envelope,
     .icon-smartphone:hover .tel,
