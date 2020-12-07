@@ -419,6 +419,7 @@ html {
 .menu-container {
   display: none;
   border: 1px solid black;
+  z-index: 100;
   background-color: #FFFFFF;
   text-align: center;
   font-size: 20px;
