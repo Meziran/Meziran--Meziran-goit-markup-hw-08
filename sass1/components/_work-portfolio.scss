@@ -15,9 +15,7 @@
     }
   }
 .work-kard{
-    
-    
-    // margin-right: 28px;
+
     margin-bottom: 28px;
 
     border: 1px solid $EEE;    
@@ -59,9 +57,7 @@
       margin-right: 29px;
       margin-left: 0;
       margin-bottom: 30px;
-    //   width: 270px;
-    //   height: 422px;
-    }
+      }
   }
 
 
@@ -96,13 +92,13 @@
 @media screen and (min-width:768px){
     .work-img {
         width: 354px;
-        height: 294px;
+        // height: 294px;
     }
 }
 @media screen and (min-width:1200px){
     .work-img {
         width: 370px;
-        height: 294px;
+        // height: 294px;
     }
 }
  .title-work{

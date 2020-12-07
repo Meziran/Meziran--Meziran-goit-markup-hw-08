@@ -77,8 +77,20 @@
                 <ul class="blok-work">
                     <li class="work-kard">
                         <div class="position-work-kard">
-                            <img class="work-img" src="./img/portfolio/1.jpg" alt="Веб-сайт Технокряк" height="294"
-                                width="370">
+                            <picture>
+                                <source
+                                    srcset="./img/portfolio/1/img-1-mobile.jpg 1x, ./img/portfolio/1/img-1-mobile@2x.jpg 2x"
+                                    media="(min-width:480px)">
+                                <source
+                                    srcset="./img/portfolio/1/img-1-tablet.jpg 1x, ./img/portfolio/1/img-1-tablet@2x.jpg 2x"
+                                    media="(min-width:768px)">
+                                <source
+                                    srcset="./img/portfolio/1/img-1-desktop.jpg 1x, ./img/portfolio/1/img-1-desktop@2x.jpg 2x"
+                                    media="(min-width:1200px)">
+
+                                <img class="work-img" src="./img/portfolio/1/img-1-mobile.jpg" alt="Веб-сайт Технокряк">
+                            </picture>
+
                             <p class="title-work-kard">Технокряк это современная площадка распространения
                                 коронавируса.
                                 Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера
@@ -89,8 +101,21 @@
                     </li>
                     <li class="work-kard">
                         <div class="position-work-kard">
-                            <img class="work-img" src="./img/portfolio/2.jpg"
-                                alt="Дизайн Постера New Orlean vs Golden Star" height="294" width="370">
+                            <picture>
+                                <source
+                                    srcset="./img/portfolio/2/img-2-mobile.jpg 1x, ./img/portfolio/2/img-2-mobile@2x.jpg 2x"
+                                    media="(min-width:480px)">
+                                <source
+                                    srcset="./img/portfolio/2/img-2-tablet.jpg 1x, ./img/portfolio/2/img-2-tablet@2x.jpg 2x"
+                                    media="(min-width:768px)">
+                                <source
+                                    srcset="./img/portfolio/2/img-2-desktop.jpg 1x, ./img/portfolio/2/img-2-desktop@2x.jpg 2x"
+                                    media="(min-width:1200px)">
+
+                                <img class="work-img" src="./img/portfolio/2/img-2-mobile.jpg"
+                                    alt="Дизайн Постера New Orlean vs Golden Star">
+                            </picture>
+
                             <p class="title-work-kard">Если я чешу в затылке -
                                 Не беда!
                                 В голове моей опилки,
@@ -102,8 +127,21 @@
                     </li>
                     <li class="work-kard">
                         <div class="position-work-kard">
-                            <img class="work-img" src="./img/portfolio/3.jpg" alt="Приложение Ресторан Seafood"
-                                height="294" width="370">
+                            <picture>
+                                <source
+                                    srcset="./img/portfolio/3/img-3-mobile.jpg 1x, ./img/portfolio/3/img-3-mobile@2x.jpg 2x"
+                                    media="(min-width:480px)">
+                                <source
+                                    srcset="./img/portfolio/3/img-3-tablet.jpg 1x, ./img/portfolio/3/img-3-tablet@2x.jpg 2x"
+                                    media="(min-width:768px)">
+                                <source
+                                    srcset="./img/portfolio/3/img-3-desktop.jpg 1x, ./img/portfolio/3/img-3-desktop@2x.jpg 2x"
+                                    media="(min-width:1200px)">
+
+                                <img class="work-img" src="./img/portfolio/1/img-1-mobile.jpg"
+                                    alt="Приложение Ресторан Seafood">
+                            </picture>
+
                             <p class="title-work-kard">Технокряк это современная площадка распространения
                                 коронавируса.
                                 Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера
@@ -235,39 +273,6 @@
         </div>
     </footer>
     <script src="./js/menu.js"></script>
-    <!-- <script>
-        // MODAL
-        (() => {
-            const refs = {
-                openModalBtn: document.querySelector('[data-open-modal]'),
-                closeModalBtn: document.querySelector('[data-close-modal]'),
-                modal: document.querySelector('[data-modal]'),
-            };
-
-            refs.openModalBtn.addEventListener('click', toggleModal);
-            refs.closeModalBtn.addEventListener('click', toggleModal);
-
-            function toggleModal() {
-                refs.modal.classList.toggle('is-hidden');
-            }
-        })();
-
-        // BURGER
-        (() => {
-            const menuBtnRef = document.querySelector("[data-menu-button]");
-            const mobileMenuRef = document.querySelector("[data-menu]");
-
-            menuBtnRef.addEventListener("click", () => {
-                const expanded =
-                    menuBtnRef.getAttribute("aria-expanded") === "true" || false;
-
-                menuBtnRef.classList.toggle("is-open");
-                menuBtnRef.setAttribute("aria-expanded", !expanded);
-
-                mobileMenuRef.classList.toggle("is-open");
-            });
-        })();
-    </script> -->
 </body>
 
 </html>

@@ -418,7 +418,6 @@ html {
 
 .menu-container {
   display: none;
-  border: 1px solid black;
   z-index: 100;
   background-color: #FFFFFF;
   text-align: center;
@@ -447,9 +446,8 @@ html {
 }
 
 .hero {
-  width: 480px;
   height: 400px;
-  background-image: linear-gradient(rgba(47, 0, 0, 0.4), rgba(0, 48, 0, 0.4), rgba(0, 0, 58, 0.4)), url("../img/hero.jpg");
+  background-image: linear-gradient(rgba(47, 0, 0, 0.4), rgba(0, 48, 0, 0.4), rgba(0, 0, 58, 0.4)), url("../img/hero/hero-mobile.jpg");
   background-color: #212121;
   background-repeat: no-repeat;
   background-position: center;
@@ -460,13 +458,14 @@ html {
 
 @media screen and (min-width: 768px) {
   .hero {
-    width: 768px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/hero/hero-tablet.jpg");
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero {
-    width: 1200px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/hero/hero-desktop.jpg");
+    background-repeat: no-repeat;
     height: 600px;
   }
 }
@@ -474,7 +473,7 @@ html {
 .hero-text {
   display: inline-flex;
   align-content: center;
-  padding-top: 200px;
+  padding-top: 118px;
   padding-right: 0px;
   padding-bottom: 0px;
   padding-left: 0px;
@@ -496,6 +495,10 @@ html {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.5em;
+    padding-top: 200px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
   }
 }
 
@@ -1326,14 +1329,12 @@ address ul {
 @media screen and (min-width: 768px) {
   .work-img {
     width: 354px;
-    height: 294px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .work-img {
     width: 370px;
-    height: 294px;
   }
 }
 

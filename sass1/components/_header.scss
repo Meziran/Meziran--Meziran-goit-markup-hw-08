@@ -1,7 +1,4 @@
 
-
-
-
 .nav{
     position: relative;
     @extend %flex-aline;
@@ -33,9 +30,11 @@
     
 .nav-list .link-header{
     display: block;
+
     @media screen and (max-width: 768px){ 
-    @include padding (0px, 0px, 40px, 0px);
+        @include padding (0px, 0px, 40px, 0px);
     }
+
     @media screen and (min-width: 768px){ 
         @include padding (32px, 0px, 0px, 0px);
     }
@@ -89,49 +88,49 @@
             @include padding (32px, 0px, 26px, 0px);
         }
         }
-     .item{
+.item{
          margin-left: auto;
          margin-right: auto;
      }  
-    .nav-list .item + .item{
+.nav-list .item + .item{
         @media screen and (min-width: 768px){ 
         margin-left: 50px;
     }
     }
-    .info-list .item+.item{
+.info-list .item+.item{
         @media screen and (min-width: 1200px){ 
         margin-left: 50px;
     }
     }
     
-    .list {
+.list {
         @include padding (0px, 0px, 0px, 0px);
         margin: 0;
     }
     
-    .logo{
-        // display: flex;
+.logo{
+    // display: flex;
         
-        @include padding (25px, 0px, 24px, 0px);
+    @include padding (25px, 0px, 24px, 0px);
     
-        font-family: Raleway;
-        @include fonts(700, 26px, 1.19em);
-    }
+    font-family: Raleway;
+    @include fonts(700, 26px, 1.19em);
+}
     
-    .logo-web{
-        color: $accent-color;
-    }
+.logo-web{
+    color: $accent-color;
+}
     
-    .logo-studio{
-        color: $title-text-color;
-    }
+.logo-studio{
+    color: $title-text-color;
+}
     
-    .link-header{
-        color: $title-text-color;
-        @include fonts(500, 14px, 1.14em);
+.link-header{
+    color: $title-text-color;
+    @include fonts(500, 14px, 1.14em);
         
-        @include padding (32px, 0px, 0px, 0px);
-        letter-spacing: 0.02em;
+    @include padding (32px, 0px, 0px, 0px);
+    letter-spacing: 0.02em;
         
         
     &:hover, 
@@ -142,23 +141,24 @@
     &.current{
         color: $accent-color;
     } 
-    }
-    .link-header:hover::after,
-    .current::after{
-        content: "";
-        display: block;
-        @include size (100%, 4px);
+}
 
-        border-radius: 4px;
-        background-color: $accent-color;
+.link-header:hover::after,
+.current::after{
+    content: "";
+    display: block;
+    @include size (100%, 4px);
+
+    border-radius: 4px;
+    background-color: $accent-color;
         
-        margin-top:8px;
+    margin-top:8px;
         
-        @extend %animation; 
-        @media screen and (min-width: 768px){ 
-            margin-top: 31px;
-        }    
-    }
+    @extend %animation; 
+    @media screen and (min-width: 768px){ 
+        margin-top: 31px;
+    }    
+}
     
     .connection-header{
         @extend %flex-aline;
