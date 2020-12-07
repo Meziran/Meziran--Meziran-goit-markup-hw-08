@@ -5,13 +5,16 @@ html{
 *,
 *::before,
 *::after{
-    box-sizing: inherit;
+    box-sizing: inherit; 
+    // outline: 1px solid red;
 }
 
 * body{
     background-color: $white;
     font-family: Roboto, sans-serif;
     @include fonts(400, 14px, 0.03em);
+    
+    
 }
 .title-h2, 
 .title-h3{
