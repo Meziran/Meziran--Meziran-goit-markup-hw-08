@@ -16,6 +16,7 @@
     display: flex;
     flex-direction: column;
     // justify-content: space-between;
+    
     @media screen and (min-width: 768px){ 
         display: flex;
         flex-direction: row;
@@ -50,9 +51,6 @@
         padding: 12px 0;
         text-align: start;
         margin-bottom: 0;
-        // margin-top: 21px;
-    // padding-bottom: 15px;
-    // justify-content: center;
     }
 
     @media screen and (min-width: 1200px){ 
@@ -60,48 +58,41 @@
 }  
 }
 
-    .icon-smartphone,
-    .icon-envelope{
-        @extend %flex-aline-justify;
+.icon-smartphone,
+.icon-envelope{
+    @extend %flex-aline-justify;
         
-        fill: $primery-text-color;
-        margin-right: 10px;
-    }
+    fill: $primery-text-color;
+    margin-right: 10px;
+}
 
-    .envelope {
-        @include size (24px, 16px);
-    //     margin-left: 5px;
-       
-    //    @include padding (0px, 10px, 0px, px);
+.envelope {
+    @include size (24px, 16px);
+}
+.tel {
+    @include size (24px, 16px);
+}
+.info-list .connection-header{
+    display: block;
+
+    @media screen and (min-width: 1200px){ 
+        @include padding (32px, 0px, 26px, 0px);
     }
-    .tel {
-        // display: flex;
-        @include size (24px, 16px);
-        // @include padding (0px, 10px, 0px, 0px);
-        // margin-top: 10px;
-    }
-    .info-list .connection-header{
-        
-        // display: flex;
-        display: block;
-        @media screen and (min-width: 1200px){ 
-            @include padding (32px, 0px, 26px, 0px);
-        }
-        }
+}
 .item{
-         margin-left: auto;
-         margin-right: auto;
-     }  
+    margin-left: auto;
+    margin-right: auto;
+}  
 .nav-list .item + .item{
-        @media screen and (min-width: 768px){ 
-        margin-left: 50px;
-    }
-    }
+    @media screen and (min-width: 768px){ 
+    margin-left: 50px;
+}
+}
 .info-list .item+.item{
-        @media screen and (min-width: 1200px){ 
-        margin-left: 50px;
-    }
-    }
+    @media screen and (min-width: 1200px){ 
+    margin-left: 50px;
+}
+}
     
 .list {
         @include padding (0px, 0px, 0px, 0px);
@@ -109,11 +100,10 @@
     }
     
 .logo{
-    // display: flex;
-        
     @include padding (25px, 0px, 24px, 0px);
     
     font-family: Raleway;
+
     @include fonts(700, 26px, 1.19em);
 }
     
@@ -162,7 +152,7 @@
     
     .connection-header{
         @extend %flex-aline;
-    // @extend %flex-aline-justify;
+    
         color: $primery-text-color;
         @include fonts(500, 18px, 1.16em);
         margin-left: auto;
@@ -185,7 +175,7 @@
         @extend %hover--accent-color;
     }
     }
-    // @include fonts(500, 18px, 1.16em);
+    
 
     .icon-envelope:hover .envelope,
     .icon-smartphone:target .envelope,

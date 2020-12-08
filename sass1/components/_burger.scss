@@ -1,40 +1,16 @@
-
-// .menu-button {
-//     // display: none;
-//     // justify-content: center;
-//     // align-items: center;
-//     position: absolute;
-//     // top: 18px;
-//     right: 10px;
-//     width: 40px;
-//     height: 40px;
-//     border: 1px solid blue;
-//     background: $white;
-//     border: 1px solid transparent;
-//     // border-radius: 50%;
-//     // box-sizing: border-box;
-//     cursor: pointer;
-//     transition: 250ms;
-//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  
-//     &:hover .open-menu,
-//     &:focus .open-menu {
-//     fill: $accent-color;
-//     transition: 250ms;
-//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-//     }  
-// }
   
 .menu-button{
     display: inline-block;
     margin-left: auto;;
-  width: 40px;
-  height: 40px; 
-  background-color: transparent; 
-  border: none;
+    width: 40px;
+    height: 40px; 
+    background-color: transparent; 
+    border: none;
 
-  @media screen and (min-width: 768px){
-    display: none;
+    cursor: pointer;
+
+    @media screen and (min-width: 768px){
+      display: none;
     }
 }
 
@@ -50,40 +26,32 @@
   display: none;
 }
 .menu-container {
-      display: none;
-  // border: 1px solid black;
-  z-index: 100;
+    display: none;
+  
+    z-index: 100;
 
     background-color: $white;
-      // background-color: turquoise;
-      // padding: 20px;
-      text-align: center;
-      font-size: 20px;
+     
+    text-align: center;
+    font-size: 20px;
    
     &.is-open{
         display: block;
     }
     
-}  
-@media screen and (max-width: 767px){ .menu-container{
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-}
+  
+    @media screen and (max-width: 767px){ 
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+    }
+
+    @media screen and (min-width: 768px){ 
+      
+      display: flex;
+      width: 100%;
+    }
 }
 
-@media screen and (min-width: 768px){ .menu-container{
-  // display: block;
-  display: flex;
-  width: 100%;
-}
-}
-
-// @media screen and (max-width: 767px) {
-//     .page-header {
-//       padding-top: 16px;
-//       padding-bottom: 16px;
-//     }
-//   }

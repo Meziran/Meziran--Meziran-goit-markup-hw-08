@@ -78,8 +78,7 @@ textarea {
 .icon-envelope:hover .envelope,
 .icon-smartphone:target .envelope,
 .icon-smartphone:hover .tel,
-.icon-smartphone:target .tel, .icons-link:hover,
-.icons-link:focus, .icons-link-clients:hover, .icons-link-clients:focus, .icons-link-clients:hover .client-icons-svg .icons-link-clients,
+.icon-smartphone:target .tel, .social-icons-svg:hover, .social-icons-svg:focus, .icons-link-clients:hover, .icons-link-clients:focus, .icons-link-clients:hover .client-icons-svg .icons-link-clients,
 .icons-link-clients:target .client-icons-svg .icons-link-clients, .buton-hero:hover,
 .btn-modal:hover,
 .btn-footer:hover,
@@ -136,6 +135,7 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  outline: 1px solid red;
 }
 
 * body {
@@ -396,6 +396,7 @@ html {
   height: 40px;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
@@ -484,7 +485,7 @@ html {
   padding-right: 0px;
   padding-bottom: 0px;
   padding-left: 0px;
-  width: 480px;
+  border: 1solid g;
   color: #FFFFFF;
   font-family: Roboto;
   font-weight: 900;
@@ -528,6 +529,7 @@ html {
   letter-spacing: 0.06em;
   font-family: Roboto;
   color: #FFFFFF;
+  cursor: pointer;
 }
 
 .btn-blok {
@@ -572,7 +574,7 @@ html {
   .features {
     width: 270px;
     height: 250px;
-    margin-bottom: 0pc;
+    margin-bottom: 0px;
     margin-right: 26px;
   }
   .features:nth-child(3n) {
@@ -798,8 +800,7 @@ html {
   height: 20px;
 }
 
-.icons-link:hover,
-.icons-link:focus {
+.social-icons-svg:hover, .social-icons-svg:focus {
   background-color: #2196F3;
 }
 
@@ -1009,43 +1010,6 @@ address ul {
   .join-title {
     display: flex;
   }
-}
-
-.ul-join .join-link + .join-link {
-  margin-left: 10px;
-}
-
-.join-link::before {
-  display: inline-block;
-  justify-content: space-between;
-  content: "";
-  width: 44px;
-  height: 44px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-}
-
-.icon-instagram::before {
-  background-size: 20px;
-  background-image: url(../img/icon/footer/footer-instagram.svg);
-}
-
-.icon-twitter::before {
-  background-size: 20px;
-  background-image: url(../img/icon/footer/footer-twitter.svg);
-}
-
-.icon-facebook::before {
-  background-size: 20px;
-  background-image: url(../img/icon/footer/footer-facebook.svg);
-}
-
-.icon-linkedin::before {
-  background-size: 20px;
-  background-image: url(../img/icon/footer/footer-linkedin.svg);
 }
 
 .join-link:hover,
@@ -1450,6 +1414,7 @@ address ul {
 .modal-icons-close {
   width: 11px;
   height: 11px;
+  cursor: pointer;
 }
 
 .title-fild {
@@ -1651,6 +1616,7 @@ address ul {
   line-height: 1.87em;
   letter-spacing: 0.06em;
   font-family: Roboto;
+  cursor: pointer;
 }
 
 .btn-modal:hover, .btn-modal:focus {

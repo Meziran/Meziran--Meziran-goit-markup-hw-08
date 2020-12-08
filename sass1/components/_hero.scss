@@ -30,7 +30,7 @@
           background-size: 768px 400px;
           height: 400px;
           width: 768px;
-      }
+    }
     @media screen and (min-width: 1200px) {
         background-image: linear-gradient(
             to right,
@@ -43,19 +43,17 @@
         // height: 400px;
         width: 1600px;
         height: 600px;
-      }
+    }
 }
 
 .hero-text{
     display: inline-flex;
     align-content: center;
 
-
     @include padding (118px, 0px, 0px, 0px);
-    
-    
-    width: 480px;
-
+       
+    // width: 480px;
+    border: 1solid g;
     color: $white;
     font-family: Roboto;
     
@@ -66,7 +64,6 @@
     text-transform: uppercase;
 
     @media screen and (min-width:1200px){
-        
         @include size (696px, );
         @include fonts(900, 44px, 1.5em);
         @include padding (200px, 0px, 0px, 0px);
@@ -94,6 +91,8 @@
     font-family: Roboto;
 
     color: $white;
+
+    cursor: pointer;
 }
 
 
