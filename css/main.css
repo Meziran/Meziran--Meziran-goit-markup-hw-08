@@ -135,7 +135,6 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
-  outline: 1px solid red;
 }
 
 * body {
@@ -821,9 +820,21 @@ html {
   border-radius: 50%;
 }
 
+.icons-link:hover {
+  background-color: #2196F3;
+}
+
 .icons-link:hover .social-icons-svg,
 .icons-link:focus .social-icons-svg {
   fill: #FFFFFF;
+}
+
+.icons-item:not(:last-child) {
+  margin-right: 10px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 30px;
+  padding-left: 0px;
 }
 
 .client-icons {
@@ -1012,6 +1023,14 @@ address ul {
   }
 }
 
+.ft-icons-item {
+  width: 44px;
+  height: 44px;
+  fill: #AFB1B8;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
 .join-link:hover,
 .join-link:focus {
   width: 44px;
@@ -1119,6 +1138,7 @@ address ul {
 }
 
 .footer-icon-svg {
+  position: absolute;
   width: 24px;
   height: 24px;
   fill: #FFFFFF;
