@@ -756,8 +756,10 @@ html {
   text-align: center;
 }
 
-.card-team {
-  margin-right: 1px;
+@media screen and (max-width: 479px) {
+  .card-team {
+    margin-right: 1px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -781,7 +783,6 @@ html {
 @media (min-width: 1200px) {
   .card-team {
     flex-basis: calc((100% - 30px * 3) / 4);
-    margin-right: 0;
   }
 }
 
