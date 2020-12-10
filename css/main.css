@@ -1457,14 +1457,14 @@ address ul {
 @media screen and (min-width: 480px) {
   .modal {
     width: 450px;
-    height: 609px;
+    height: auto;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
-    height: 581px;
+    height: auto;
   }
 }
 
@@ -1660,6 +1660,7 @@ address ul {
   padding-right: 55px;
   padding-bottom: 10px;
   padding-left: 55px;
+  margin-bottom: 40px;
   margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
@@ -1680,5 +1681,9 @@ address ul {
   border: 1px solid #2196F3;
   background-color: #FFFFFF;
   color: #2196F3;
+}
+
+.btn-modal-position {
+  border: 1px solid red;
 }
 /*# sourceMappingURL=main.css.map */
