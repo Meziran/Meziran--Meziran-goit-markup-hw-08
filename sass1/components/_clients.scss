@@ -1,10 +1,15 @@
 .client-icons{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    text-align: center;
+    // justify-content: space-between;
     // border: 1px solid blue;
     margin-left: 15px;
     margin-right: 15px;
+    @media screen and (min-width:480px){
+    
+       justify-content: space-between;
+    }
 
     @media screen and (min-width:1200px){
     
@@ -21,6 +26,8 @@
 
 // }
 .card-clients{ 
+
+    margin-left: 1px;
     margin-bottom: 28px;
 
     &:nth-last-child(-n + 2){

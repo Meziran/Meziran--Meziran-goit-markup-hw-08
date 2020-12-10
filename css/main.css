@@ -756,6 +756,10 @@ html {
   text-align: center;
 }
 
+.card-team {
+  margin-right: 1px;
+}
+
 @media (min-width: 768px) {
   .card-team {
     flex-basis: calc((100% - 30px) / 2);
@@ -777,6 +781,7 @@ html {
 @media (min-width: 1200px) {
   .card-team {
     flex-basis: calc((100% - 30px * 3) / 4);
+    margin-right: 0;
   }
 }
 
@@ -852,9 +857,15 @@ html {
 .client-icons {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  text-align: center;
   margin-left: 15px;
   margin-right: 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .client-icons {
+    justify-content: space-between;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -865,6 +876,7 @@ html {
 }
 
 .card-clients {
+  margin-left: 1px;
   margin-bottom: 28px;
 }
 
