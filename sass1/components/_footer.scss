@@ -1,7 +1,9 @@
 .nav-footer{
-    background-color: $title-text-color;    
+    background-color: $title-text-color;  
+      
 }
 .flexbox{
+    background-color: $title-text-color;  
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -10,7 +12,7 @@
     text-align: center; 
 }
 .footer{
-    background-color: $title-text-color;
+    
    @include padding (60px, 20px, 60px, 20px);
 
     @media screen and (min-width:768px){
