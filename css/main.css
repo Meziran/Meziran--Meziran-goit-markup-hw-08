@@ -1451,22 +1451,20 @@ address ul {
   top: 400px;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
   background-color: #FFFFFF;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .modal {
-    top: 15%;
-    left: 50%;
+    width: 450px;
+    height: 609px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .modal {
-    top: 50%;
-    left: 50%;
+    width: 528px;
+    height: 581px;
   }
 }
 

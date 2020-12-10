@@ -19,17 +19,16 @@
     left: 50%;
     transform: translate(-50%, -50%);
     
-    @include size (528px, 581px);
+    
 
     background-color: $white;
-    @media screen and (min-width:768px){
-        top: 15%;
-        left: 50%;
+    @media screen and (min-width:480px){
+        @include size (450px, 609px);
     }
 
     @media screen and (min-width:1200px){
-        top: 50%;
-        left: 50%;
+
+        @include size (528px, 581px);
     }
 }
 
